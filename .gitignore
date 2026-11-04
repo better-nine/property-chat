@@ -3,34 +3,30 @@
 .env.*
 !.env.example
 
-# Python
+# Java / Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+out/
+*.class
+*.log
+hs_err_pid*
+
+# Python (scripts)
 __pycache__/
 *.py[cod]
-*.egg-info/
 .venv/
 venv/
 .pytest_cache/
-.mypy_cache/
-.ruff_cache/
-.coverage
-htmlcov/
-dist/
-build/
-
-# Node
-node_modules/
-frontend/dist/
-*.log
-npm-debug.log*
 
 # Data / local artifacts
-data/raw/
+scripts/data/
 logs/
 *.jsonl
 
 # IDE / OS
 .idea/
-.vscode/
 *.iml
+.vscode/
 .DS_Store
 Thumbs.db
